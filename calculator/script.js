@@ -1,35 +1,42 @@
 const buttonsEl = document.querySelectorAll("button");
 
+const inputFieldEl = document.getElementById("result");
+
 for (let i = 0; i < buttonsEl.length; i++)
     {
         buttonsEl[i].addEventListener("click", () =>{
             const buttonValue = buttonsEl[i].textContent;
             if(buttonValue === "C")
             {
-                clearResult();
+                inputFieldEl.value = "";
             }
             else if(buttonValue === "=")
             {
-                calculateResult()
+                // calls the built-n function evaluate which does all the arithmetic
+                inputFieldEl.value = eval(inputFieldEl.value);
+            }
+            else if(buttonValue === "x")
+            {
+                inputFieldEl.value = inputFieldEl.value.slice(0, -1);
             }
             else
             {
-                appendValue(buttonValue);
+                inputFieldEl.value += buttonValue;
             }
         });
     }
 
-    function clearResult()
-    {
+    // function clearResult()
+    // {
 
-    }
+    // }
 
-    function calculateResult()
-    {
+    // function calculateResult()
+    // {
+    //     inputFieldEl.value = eval(inputFieldEl.value);
+    // }
 
-    }
-
-    function appendValue(buttonValue)
-    {
-
-    }
+    // function appendValue(buttonValue)
+    // {
+    //     inputFieldEl.value += buttonValue;
+    // }
