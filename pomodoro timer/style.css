@@ -48,3 +48,29 @@ button{
     color: rgba(0, 45, 247, 0.8);
     border-color: rgba(0, 45, 247, 0.8);
 }
+#counter{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3) inset;
+    border-radius: 5px;
+}
+
+#timer-button{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #2c3e50;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2c3e50;;
+    color:#969696;
+    transition: all .3s ease-in-out;
+}
+
+#timer-button:hover{
+    opacity: .6;
+}
