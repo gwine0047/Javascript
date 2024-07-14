@@ -1,0 +1,73 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.dice{
+    font-size: 7rem;
+    margin: 5px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation{
+    animation-name: roll;
+}
+
+@keyframes roll{
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+button{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #2e8baf;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 20px;
+    border-color: #2e8baf;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+button:hover{
+    background-color: #2e8baf;
+    color: #fff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+li{
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: .5rem;
+    background-color: #dadada;
+    border-radius: .5rem;
+    box-shadow: 0 2px 2-x rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
