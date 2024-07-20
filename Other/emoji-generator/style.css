@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    background: linear-gradient(to bottom right, #e40461, #e60e32, #68002b);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    font-size: 2rem;
+    color: aliceblue;
+}
+.section{
+    text-align: center;
+
+}
+
+#btn{
+    color: #e40461;
+    background: rgba(255,255, 255, .4);
+    padding: 15px;
+    font-size: 5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+    /* filter: grayscale(); */
+    cursor: pointer;
+    transition: filter, transfrom 3s ease-in-out;
+}
+
+#btn:hover{
+    transform: scale(1.05);
+}
+
+.name{
+    font-weight: 600;
+    color: aliceblue;
+}
