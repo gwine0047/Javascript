@@ -58,8 +58,8 @@ app.put('/api/products/:id', async (req, res) => {
 mongoose.connect("mongodb+srv://gwinedev:EGyV6Pgrk2YsmUwb@backenddb.ak9ip.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
 .then(() => {
     console.log("Connected to database");
-    app.listen(3000, () =>{
-        console.log("Server is running on port 3000");
+    app.listen(4000, () =>{
+        console.log("Server is running on port 4000");
 });
     
 })
